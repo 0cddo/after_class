@@ -1,0 +1,33 @@
+h1 {
+  margin: -1000px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+.login-box {
+  box-sizing: border-box;
+  width: 350px;
+  height: 135px;
+  background-color: #f4f6f7;
+  border: 1px solid #dae1e6;
+}
+.big-box {
+}
+.small-box {
+}
+.log-mention {
+  padding-left: 3px;
+  color: gray;
+}
+
+.box-inside {
+  box-sizing: border-box;
+  width: 315px;
+  height: 48px;
+  background-color: #19ce60;
+  border: 1px solid #15c654;
+}
