@@ -1,5 +1,9 @@
-h1 {
-  margin: -1000px;
+.screen-out {
+  display: inline-block;
+  text-indent: -9999px;
+}
+body {
+  margin: 30px;
 }
 a {
   text-decoration: none;
@@ -8,26 +12,32 @@ ul {
   list-style: none;
 }
 
-.login-box {
+.login-container {
   box-sizing: border-box;
   width: 350px;
   height: 135px;
   background-color: #f4f6f7;
   border: 1px solid #dae1e6;
 }
-.big-box {
-}
-.small-box {
-}
+/* button {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+} */
 .log-mention {
   padding-left: 3px;
   color: gray;
 }
 
-.box-inside {
+.login-button {
   box-sizing: border-box;
   width: 315px;
   height: 48px;
   background-color: #19ce60;
   border: 1px solid #15c654;
+}
+.user-help-login ul {
+  display: flex;
+  justify-content: space;
+  align-items: center;
 }
