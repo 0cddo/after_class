@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice layout-flex</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 900;
+      }
+      body {
+        margin: 10px auto;
+        width: 1000px;
+        height: 100%;
+        /* display: flex; */
+        border: solid 5px #000;
+      }
+      header {
+        border-bottom: solid 5px #000;
+      }
+      footer {
+        border-top: solid 5px #000;
+      }
+      main {
+        display: flex;
+      }
+      section {
+        border-left: solid 5px #000;
+        border-right: solid 5px #000;
+      }
+      .menu,
+      .ad,
+      footer,
+      header,
+      section {
+        padding: 15px;
+      }
+
+      header,
+      footer {
+        background-color: #83caff;
+      }
+      .menu,
+      .ad {
+        background-color: #cc99cc;
+      }
+      section {
+        background-color: #ffcccc;
+      }
+
+      @media screen and (max-width: 800px) {
+        body {
+          width: 100%;
+        }
+        main {
+          display: flex;
+          flex-wrap: wrap;
+        }
+        section {
+          border-top: solid 5px #000;
+          border-bottom: solid 5px #000;
+          border-right: none;
+          border-left: none;
+        }
+        .menu,
+        .ad {
+          width: 100%;
+        }
+        .menu ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 10px;
+        }
+        .content {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>HEADER</h1>
+    </header>
+    <main>
+      <nav class="menu">
+        <h2>MENU</h2>
+        <ul>
+          <li>item1</li>
+          <li>item2</li>
+          <li>item3</li>
+          <li>item4</li>
+          <li>item5</li>
+        </ul>
+      </nav>
+      <section>
+        <article class="content">
+          <h2>CONTENT</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At vero
+            ducimus soluta voluptas. Cupiditate accusamus odio at, ad, pariatur
+            temporibus dolor minima accusantium, modi tempora doloribus
+            architecto! Doloremque, corporis aspernatur!
+          </p>
+        </article>
+      </section>
+      <aside class="ad">
+        <ul>
+          <li><h2>AD</h2></li>
+          <li><h2>AD</h2></li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <h2>FOOTER</h2>
+    </footer>
+  </body>
+</html>
