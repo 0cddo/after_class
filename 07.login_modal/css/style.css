@@ -1,0 +1,38 @@
+body {
+  /* position: relative; */
+}
+a {
+  text-decoration: none;
+}
+.cont-login {
+  position: relative;
+  width: 520px;
+  height: 712px;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.login-box {
+  width: 472px;
+  height: 50px;
+  border-radius: 5px;
+}
+.login-form {
+}
+ {
+}
+.btn-login {
+  background-color: #2f80ed;
+}
+.google-login button {
+  border-radius: 1px solid #767676;
+}
+.fb-login button {
+  border-radius: 1px solid #2d9cdb;
+}
+.naver-login button {
+  border-radius: 1px solid #00bf18;
+}
+.kakao-login {
+  border-radius: 1px solid #f2c94c;
+}
