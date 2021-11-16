@@ -12,39 +12,57 @@
     <header>
       <section>
         <h1 class="screen-out">1만 시간의 법칙</h1>
-        <img src="img/title.png" alt="1만 시간의 법칙" />
-        <img src="img/clock.png" alt="" />
+        <img src="img/title.png" alt="1만 시간의 법칙" class="title" />
       </section>
     </header>
     <main>
-      <section class="sentence">
-        <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
-        <p>
-          1만 시간의 법칙은 어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간의
-          훈련이 필요하다는 법칙이다.
+      <section class="dsc-contain">
+        <h2>
+          <img
+            src="/06.10000_hours/img/sentence.png"
+            alt="연습은 어제의 당신보다 당신을 더 낫게 만든다."
+          />
+        </h2>
+        <p class="description">
+          <strong>1만 시간의 법칙</strong>은
+          <em>어떤 분야의 전문가가 되기 위해서는</em>
+          <em>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</em>
         </p>
       </section>
-      <section class="input-container">
-        <article class="input-box1">
-          <p>나는</p>
-          <input type="text" />
-          <p>전문가가 될 것이다.</p>
-        </article>
-        <article class="input-box2">
-          <p>그래서 앞으로 매일 하루에</p>
-          <input type="text" />
-          <p>시간씩 훈련할 것이다.</p>
-        </article>
-      </section>
-      <section class="btn-containe r">
-        <button type="submit">
-          나는 며칠 동안 훈련을 해야 1만 시간이 될까?
-        </button>
-        <img src="img/click.png" alt="클릭해주세요" />
-      </section>
+
+      <ul>
+        <li>
+          <label for="tobe">나는</label>
+          <input
+            type="text"
+            name="tobe"
+            id="tobe"
+            placeholder="예) 프로그래밍"
+          />
+          <label for="tobe">전문가가 될 것이다.</label>
+        </li>
+        <li>
+          <label for="time">그래서 앞으로 매일 하루에</label>
+          <input type="number" name="time" id="time" placeholder="예) 5" />
+          <label for="time">시간씩 훈련할 것이다.</label>
+        </li>
+      </ul>
+      <button class="btn btn-hours btn-yellow">
+        나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+      </button>
+      <ul>
+        <li>당신은 <strong>프로그래밍</strong>전문가가 되기 위해서</li>
+        <li>대략 <strong>5110</strong>일 이상 훈련하셔야 합니다! :)</li>
+      </ul>
+      <ul>
+        <li>
+          <button class="btn btn-go btn-yellow">훈련하러 가기 GO! GO!</button>
+        </li>
+        <li><button class="btn btn-share">공유하기</button></li>
+      </ul>
     </main>
     <footer>
-      <p>weniv</p>
+      <h2><img src="/06.10000_hours/img/logo.png" alt="weniv" /></h2>
       <small
         >※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</small
