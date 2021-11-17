@@ -1,14 +1,6 @@
 @charset "utf-8";
 
 @font-face {
-  font-family: "OTEnjoystoriesBA";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "GmarketSansBold";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
     format("woff");
@@ -37,13 +29,70 @@
 }
 
 /* common */
-
 body {
   text-align: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
+  background-color: #5b2386;
+  margin: 0 auto;
+  padding-top: 140px;
+  color: #fff;
+  position: relative;
 }
+.screen-out {
+  display: inline-block;
+  text-indent: -9999px;
+}
+button {
+  cursor: pointer;
+}
+
 /* pc size */
+/* top */
+/* .title {
+  position: relative;
+} */
+.title-img {
+  display: inline-block;
+  width: 564px;
+  height: 100%;
+  z-index: 30;
+}
+.title-img::after {
+  /* Q.img 태그에 클래스를 주고 가상요소를 지정해 시계 배경 이미지를 넣으려 하는데 왜 삽입 안되지? 왜 section에 클래스 줬을 때 나오는거지????? */
+  display: inline-block;
+  content: url(/06.10000_hours/img/clock.png);
+  width: 221px;
+  height: 225px;
+  background: center/cover no-repeat;
+}
+
+/* button */
+.btn {
+  padding: 21px 49px;
+  border-radius: 56px;
+  height: 66px;
+  box-sizing: border-box;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  font-family: Gmarket Sans;
+}
+.btn-yellow {
+  background-color: #fcee21;
+  color: #5b2386;
+}
+.btn-hours {
+  width: 565px;
+}
+.btn-go {
+  width: 356px;
+}
+.btn-share {
+  width: 191px;
+  background-color: #fff;
+  color: #5b2386;
+}
 
 /* iphone X -- size */
 
