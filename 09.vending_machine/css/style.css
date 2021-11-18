@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.ir {
+  display: inline-block;
+  text-indent: -9999px;
+}
