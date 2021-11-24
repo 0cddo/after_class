@@ -11,6 +11,28 @@ a {
   border: 1px solid #c4c4c4;
   border-radius: 10px;
   background-color: #ffffff;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.top-title {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0 18px;
+}
+.top-title h1 {
+  text-align: center;
+  font-size: 1rem;
+}
+.cont-login::after {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  display: block;
+  content: "";
+  height: 1px;
+  width: 520px;
+  background-color: #c4c4c4;
 }
 .login-box {
   width: 472px;
@@ -18,8 +40,10 @@ a {
   border-radius: 5px;
 }
 .login-form {
+  /* display: flex; */
 }
- {
+.user-inform {
+  display: flex;
 }
 .btn-login {
   background-color: #2f80ed;
