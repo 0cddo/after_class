@@ -1,0 +1,102 @@
+*,
+:focus,
+::after {
+  box-sizing: border-box;
+}
+
+.cont-select {
+  max-width: 1000px;
+  margin: 50px 100px;
+}
+button {
+  border: transparent;
+  background-color: transparent;
+}
+
+/* common */
+.box {
+  width: 200px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  font-size: 14px;
+  border-radius: 10px;
+}
+.btn-select {
+  position: relative;
+  height: 40px;
+  padding: 13px 80px 13px 14px;
+}
+.btn-select::after {
+  position: absolute;
+  top: 16px;
+  left: 170px;
+  display: block;
+  content: "";
+  background: url(../Polygon\ 1.png) center/contain no-repeat;
+  width: 12px;
+  height: 8px;
+}
+
+.list-member {
+  position: absolute;
+  height: 208px;
+  margin-top: 9px;
+  box-shadow: 4px 4px 14px 0 rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.list-member button {
+  box-sizing: border-box;
+  height: 40px;
+  cursor: pointer;
+  padding: 12px 138px 12px 18px;
+}
+
+.btn-select {
+  font-size: 12px;
+}
+/* .btn-select:focus {
+  border: 1px solid purple;
+  box-shadow: 0 1px 3px 10px #f8e4ff;
+} */
+/* .btn-select:focus::after {
+  position: absolute;
+  top: 16px;
+  left: 170px;
+  display: block;
+  content: "";
+  background: url(../Polygon\ 1.png) center/contain no-repeat;
+  width: 12px;
+  height: 8px;
+  transform: rotate(180deg);
+} */
+.list-member button:hover {
+  background-color: #f8e4ff;
+  height: 30px;
+  width: 184px;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin: 9px;
+}
+
+.btn-select.on {
+  display: block;
+  border: 1px solid purple;
+  box-shadow: 0 1px 3px 10px #f8e4ff;
+}
+
+.btn-select.on::after {
+  position: absolute;
+  top: 16px;
+  left: 170px;
+  display: block;
+  content: "";
+  background: url(../Polygon\ 1.png) center/contain no-repeat;
+  width: 12px;
+  height: 8px;
+  transform: rotate(180deg);
+}
+
+.btn-select.on + .list-member {
+  display: block;
+}
